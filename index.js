@@ -4,6 +4,14 @@ const sequelize = require('./config/database')
 require('dotenv').config();
 
 app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.json({
+        'message': 'Welcome to E-commerce RESTful API developed by Sheshant Manure',
+        'tech-stack': 'Node.js Express Sequelize PostgreSQL with JWT based Authentication'
+    })
+})
+
 app.use('/user'  , require('./routes/user.js'));
 app.use('/product', require( './routes/product.js'))
 app.use('/category', require('./routes/category.js'))
