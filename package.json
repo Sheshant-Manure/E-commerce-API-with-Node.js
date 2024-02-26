@@ -4,6 +4,7 @@
   "description": "A robust and scalable E-commerce api built with Node.js which supports operations such as managing products, categories, user carts, and order processing. Additionally users are authenticated with JWT for secure API requests.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
